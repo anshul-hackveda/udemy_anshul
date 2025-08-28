@@ -1,0 +1,60 @@
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.dashboard-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 18px 25px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  max-width: 700px;
+  width: 100%;
+}
+
+.dashboard-avatar-text {
+  width: 80px;
+  height: 80px;
+  background-color: #333;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px; /* space between avatar and info */
+}
+
+.dashboard-info h2 {
+  margin: 0 0 6px 0;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.dashboard-info p {
+  margin: 4px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.create-course-btn {
+  margin-top: 12px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-course-btn:hover {
+  background-color: #222;
+}

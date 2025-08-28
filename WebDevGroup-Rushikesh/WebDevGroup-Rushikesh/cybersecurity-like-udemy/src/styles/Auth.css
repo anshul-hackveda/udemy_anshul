@@ -1,0 +1,223 @@
+.auth-container {
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - 72px); /* Full height minus header */
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-illustration {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    background-color: #f7f9fa;
+}
+
+.auth-form-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px;
+}
+
+.auth-form {
+    width: 100%;
+    max-width: 380px;
+}
+
+.auth-form h1 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    font-weight: 700;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group input[type="email"],
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #1c1d1f;
+    font-size: 16px;
+}
+
+.form-group.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.form-group.checkbox-group input[type="checkbox"] {
+    margin-top: 3px;
+    width: 18px;
+    height: 18px;
+}
+
+.form-group.checkbox-group label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.btn-auth {
+    width: 100%;
+    padding: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 0;
+    background: #5624d0; /* Using a color from the main page */
+    color: #fff;
+    border: 1px solid #5624d0;
+}
+.btn-auth:hover {
+    background: #401b9c;
+}
+
+.other-options {
+    text-align: center;
+    margin: 24px 0;
+    font-size: 12px;
+    color: #6a6f73;
+    position: relative;
+}
+.other-options::before, .other-options::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: calc(50% - 100px);
+    height: 1px;
+    background-color: #d1d7dc;
+}
+.other-options::before { left: 0; }
+.other-options::after { right: 0; }
+
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.social-btn {
+    width: 60px;
+    height: 48px;
+    border: 1px solid #1c1d1f;
+    background-color: #fff;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
+}
+.social-btn:hover {
+    background-color: #f7f9fa;
+}
+
+.social-btn.google {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg');
+}
+
+.social-btn.facebook {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg');
+}
+
+.social-btn.apple {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg');
+    background-size: 20px;
+}
+
+.auth-switch {
+    text-align: center;
+    font-size: 14px;
+}
+.auth-switch a {
+    color: #5624d0;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .auth-illustration {
+        display: none;
+    }
+    .auth-form-container {
+        width: 100%;
+        padding: 32px 24px;
+    }
+}
+#fp{
+    font-size : 13px;
+   cursor: pointer;
+   color: #585757
+}
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #764abc; /* purple accent */
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-auth {
+  padding: 12px;
+  background-color: #764abc;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-auth:hover {
+  background-color: #5b2db8;
+}

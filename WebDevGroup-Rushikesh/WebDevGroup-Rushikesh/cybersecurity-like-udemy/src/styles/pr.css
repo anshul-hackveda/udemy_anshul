@@ -1,0 +1,80 @@
+/* General styling for the navbar header */
+.navbar {
+    background-color: #cccccc; /* Light grey background for the navbar */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Flex container to align logo and actions */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+/* Styling for the Hackveda logo */
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #1a1a1a; /* Dark background like the 'VC' logo */
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+
+/* Container for the right-side action items */
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between the icon and buttons */
+}
+
+/* Styling for the user profile icon */
+.profile-icon {
+    font-size: 28px; /* Makes the icon a bit larger */
+    color: #333; /* Dark grey color for the icon */
+    background-color: #f0f0f0; /* Light background for the icon circle */
+    border-radius: 50%;
+    padding: 4px;
+    border: 1px solid #b0b0b0;
+    cursor: pointer;
+}
+
+/* Base styles for all navigation buttons */
+.nav-button {
+    border: 1px solid #333;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: opacity 0.2s;
+}
+
+.nav-button:hover {
+    opacity: 0.9;
+}
+
+/* Specific styles for the "Dashboard" button */
+.dashboard-btn {
+    background-color: #333333; /* Dark background */
+    color: white; /* White text */
+    border-color: #000;
+}
+
+/* Specific styles for the "Login" button */
+.login-btn {
+    background-color: #555555; /* Slightly lighter dark background */
+    color: white;
+    border-color: #333;
+}
+
+/* Specific styles for the "LogOut" button */
+.logout-btn {
+    background-color: #f0f0f0; /* Light grey background */
+    color: #333; /* Dark text */
+    border-color: #adadad;
+}

@@ -1,0 +1,50 @@
+/* Footer */
+.site-footer{
+    background-color:#1c1d1f;
+    color:#fff;
+    padding:48px 0 0 0;
+    margin-top:64px
+}
+.site-footer .container{
+    display:flex;
+    justify-content:space-between;
+    gap:48px;
+    flex-wrap:wrap
+}
+.footer-about{
+    flex:1;
+    min-width:250px
+}
+.footer-about p{
+    font-size:14px;
+    margin-top:16px
+}
+.footer-contact{
+    flex:1;
+    min-width:250px
+}
+.footer-contact h3{
+    margin-bottom:1rem;
+    font-size:18px
+}
+.footer-contact p{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    margin-bottom:12px;
+    font-size:14px
+}
+.footer-contact i{
+    margin-top:4px;
+    width:16px
+}
+.copyright{
+    text-align:center;
+    padding:24px 0;
+    margin-top:48px;
+    border-top:1px solid #3e4143
+}
+.copyright p{
+    margin:0;
+    font-size:14px
+}

@@ -1,0 +1,152 @@
+/* Global Styles & Responsive Design */
+:root {
+    /* Font Awesome */
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display, inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    color:#1c1d1f;
+    line-height:1.4
+}
+
+.container{
+    max-width:1340px;
+    margin:0 auto;
+    padding:0 24px
+}
+
+/* Responsive Design */
+@media (max-width:1200px){
+    .nav{display:none}
+    .container{padding:0 20px}
+}
+
+@media (max-width:992px){
+    body {
+        padding-bottom: 80px; /* Add space at the bottom for the fixed bar */
+    }
+    .main { margin: 0; }
+    
+    /* Show and style the mobile fixed bottom bar */
+    .mobile-cart-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 12px 16px;
+        border-top: 1px solid #d1d7dc;
+        z-index: 1000;
+        box-shadow: 0 -2px 8px rgba(0,0,0,.08);
+    }
+    .mobile-cart-bar .price-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-cart-bar .current-price {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .mobile-cart-bar .guarantee-mobile {
+        font-size: 10px;
+        color: #6a6f73;
+    }
+    .mobile-cart-bar .mobile-add-cart {
+        background: #a435f0;
+        color: #fff;
+        border: none;
+        padding: 12px 24px;
+        font-weight: 700;
+        font-size: 16px;
+        cursor: pointer;
+        flex-shrink: 0;
+        border-radius: 0;
+    }
+    
+    /* Style Intro section for mobile */
+    .intro {
+        background: #fff;
+        color: #1c1d1f;
+        padding: 16px 0 0 0;
+    }
+    .intro .breadcrumb { display: block; margin-bottom: 0; }
+    .intro .breadcrumb a { color: #5624d0; }
+    .intro .breadcrumb i { color: #6a6f73; }
+    .intro .new-badge{ background-color: #d1fae5; color: #047857; }
+    .intro a { color: #5624d0; }
+    
+    .mobile-only-image {
+        display: block;
+        position: relative;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    .mobile-only-image img { width: 100%; display: block; }
+    .mobile-only-image .play-overlay {
+        opacity: 1;
+        background: rgba(0,0,0,0.3);
+        border-radius: 0;
+    }
+    
+    .sidebar-image { display: none !important; }
+
+    .content { flex-direction: column; gap: 0; }
+    .sidebar {
+        order: 1;
+        width: 100%;
+        position: static;
+        margin-bottom: 24px;
+    }
+    .left { order: 2; }
+
+    .course-card { border: none; box-shadow: none; }
+    .card-content { padding: 0; }
+    .includes { display: none; } /* Keep course includes hidden on mobile */
+    .links, .coupon, .guarantee, .applied-coupon {
+        display: block; /* Make sure these are visible */
+    }
+    .price { display: none; } /* Hide the inline price on mobile */
+}
+
+@media (max-width:768px){
+    .search,.header-actions{display:none}
+    .mobile-toggle{display:block}
+    .container{padding:0 16px}
+    
+    .intro h1{font-size:22px}
+    .grid{grid-template-columns:1fr}
+    .instructor .instructor-meta{flex-direction:column;gap:16px;text-align:center}
+    .instructor .instructor-pic{width:100px;height:100px;align-self:center}
+    .instructor .instructor-stats{align-items:center}
+    .site-footer .container{flex-direction:column;gap:32px}
+}
+
+@media (max-width:480px){
+    .intro h1{font-size:20px}
+    .intro > .container > p{font-size:14px}
+    .learn-box{padding:16px;margin-bottom:24px}
+    .learn-box h2,.curriculum h2,section h2{font-size:20px}
+    .section-btn{padding:12px;font-size:14px}
+    .lecture-description {
+        padding: 0 16px 16px 16px;
+    }
+    .lecture-description.active {
+        padding: 0 16px 16px 16px;
+    }
+}

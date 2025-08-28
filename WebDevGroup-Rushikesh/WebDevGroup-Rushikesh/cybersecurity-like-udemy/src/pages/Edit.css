@@ -1,0 +1,209 @@
+.edit-course-container {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px 30px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit-course-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.edit-course-container label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+}
+
+.edit-course-container input,
+.edit-course-container textarea,
+.edit-course-container select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.edit-course-container input:focus,
+.edit-course-container textarea:focus,
+.edit-course-container select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.edit-course-container textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.edit-course-container .thumbnail-box {
+  margin-top: 10px;
+  position: relative;
+  width: 200px;
+  height: 120px;
+  background-color: #eee;
+  border: 1px dashed #aaa;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.edit-course-container .thumbnail-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.edit-course-container .thumbnail-box span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #666;
+  font-size: 14px;
+}
+
+.edit-course-container .thumbnail-box input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.edit-course-container button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.edit-course-container button:hover {
+  opacity: 0.9;
+}
+
+.edit-course-container button:first-of-type {
+  margin-right: 10px;
+}
+
+.edit-course-container .btn-publish {
+  background-color: #28a745;
+  color: white;
+}
+
+.edit-course-container .btn-unpublish {
+  background-color: #ffc107;
+  color: white;
+}
+
+.edit-course-container .btn-cancel {
+  background-color: #dc3545;
+  color: white;
+}
+
+.edit-course-container .btn-save {
+  background-color: #007bff;
+  color: white;
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .edit-course-container {
+    padding: 15px;
+  }
+
+  .edit-course-container .thumbnail-box {
+    width: 100%;
+    height: 160px;
+  }
+}
+.lecture-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f7f8fa;
+}
+
+.lecture-card {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.lecture-card h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.lecture-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.lecture-input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.lecture-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.back-btn {
+  background: #f1f1f1;
+  color: #333;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.back-btn:hover {
+  background: #e1e1e1;
+}
+
+.create-btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.create-btn:hover {
+  background: #333;
+}
